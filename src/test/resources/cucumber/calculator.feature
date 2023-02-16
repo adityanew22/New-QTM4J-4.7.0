@@ -3,7 +3,7 @@ Feature: Calculator
   I want to use a calculator
   So that I don't need to calculate myself
 
-@storykey=abc-12
+@storykey=abc-1222
 @testcasekey=abc-31
 @newtag1
 @newtag2
