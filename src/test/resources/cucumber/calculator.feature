@@ -4,7 +4,7 @@ Feature: Calculator
   So that I don't need to calculate myself
 
 @storykey=abc-1222
-@testcasekey=abc-31
+@testcasekey=abc-3111
 @newtag1
 @newtag2
     Scenario Outline: Add two numbers
