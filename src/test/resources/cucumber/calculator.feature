@@ -3,8 +3,6 @@ Feature: Calculator
   I want to use a calculator
   So that I don't need to calculate myself
 
-@testcasekey=BIZ-TC-4
-
     Scenario Outline: Add two numbers
     Given I have a calculator
     When I add <num1> and <num2>
