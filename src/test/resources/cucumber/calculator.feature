@@ -3,10 +3,8 @@ Feature: Calculator
   I want to use a calculator
   So that I don't need to calculate myself
 
-@storykey=abc-1222
-@testcasekey=abc-3111
-@newtag1
-@newtag2
+@testcasekey=BIZ-TC-4
+
     Scenario Outline: Add two numbers
     Given I have a calculator
     When I add <num1> and <num2>
