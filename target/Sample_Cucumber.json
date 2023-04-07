@@ -1,0 +1,331 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1258324,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankingSteps.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Withdraw less money",
+        "description": "",
+        "id": "banking;withdraw-less-money",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116825016,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have $1100 on my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1100",
+                  "offset": 8
+                }
+              ],
+              "location": "BankingSteps.i_have_a_atm(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 83724,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I withdraw $500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 12
+                }
+              ],
+              "location": "BankingSteps.i_withdraw(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89674,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I get $500 from the ATM",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 7
+                }
+              ],
+              "location": "BankingSteps.the_result_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29009,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankingSteps.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Withdraw more money",
+        "description": "",
+        "id": "banking;withdraw-more-money",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58308,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have $150 on my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "150",
+                  "offset": 8
+                }
+              ],
+              "location": "BankingSteps.i_have_a_atm(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57129,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I withdraw $100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 12
+                }
+              ],
+              "location": "BankingSteps.i_withdraw(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 481397,
+              "error_message": "java.lang.AssertionError: expected:\u003c300\u003e but was:\u003c100\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\n\tat org.junit.Assert.assertEquals(Assert.java:118)\n\tat org.junit.Assert.assertEquals(Assert.java:555)\n\tat org.junit.Assert.assertEquals(Assert.java:542)\n\tat com.czeczotka.bdd.steps.BankingSteps.the_result_should_be(BankingSteps.java:35)\n\tat ✽.Then I get $300 from the ATM(./banking.feature:15)\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I get $300 from the ATM",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 7
+                }
+              ],
+              "location": "BankingSteps.the_result_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 22056,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankingSteps.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Withdraw money from the account",
+        "description": "",
+        "id": "banking;withdraw-money-from-the-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 61048,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I have $200 on my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "BankingSteps.i_have_a_atm(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54565,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I withdraw $50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 12
+                }
+              ],
+              "location": "BankingSteps.i_withdraw(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57408,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I get $50 from the ATM",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 7
+                }
+              ],
+              "location": "BankingSteps.the_result_should_be(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20104,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankingSteps.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Withdraw money from the account",
+        "description": "",
+        "id": "banking;withdraw-money-from-the-account;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 58381,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I have $100 on my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 8
+                }
+              ],
+              "location": "BankingSteps.i_have_a_atm(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53212,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I withdraw $60",
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 12
+                }
+              ],
+              "location": "BankingSteps.i_withdraw(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53671,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I get $60 from the ATM",
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 7
+                }
+              ],
+              "location": "BankingSteps.the_result_should_be(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Banking",
+    "description": "As a user\nI want to use a ATM Trasanction",
+    "id": "banking",
+    "keyword": "Feature",
+    "uri": "./banking.feature"
+  }
+]
