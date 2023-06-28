@@ -1,0 +1,28 @@
+
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+trigger:
+- main
+pool: 
+  vmImage: ubuntu-latest
+parameters:
+  - name: inputName
+    displayName: Tell your name?
+    type: string
+  - name: build
+    displayName: What is the build?
+    type: number
+  - name: environment
+    displayName: What is the environment?
+    type: string
+  - name: component
+    displayName: What is the component?
+    type: string
+  - name: priority
+    displayName: What is the priroity?
+    type: string
+steps:
+- script: echo $ {{parameters.inputName}}"succesfully triggered this build from a REST API call"
+  displayName: 'print this message from automatically created pipeline '
